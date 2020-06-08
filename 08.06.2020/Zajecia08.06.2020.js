@@ -34,27 +34,37 @@
 
 //this - wskazuje na aktualny kontekts. Funckję która go uruchomiła
 
-const zeZmiennej = "milicja ma pałę";
-const mojObiekt = {
-    aaa: "ala ma kota",
-    bbb: 12+13,
-    innyObiekt: {
-        a: 'czesc',
-        b: 'uszanowanko',
-    },
-    dajMiA: function () {
-        console.log(this);
-    }
-}
+// const zeZmiennej = "milicja ma pałę";
+// const mojObiekt = {
+//     aaa: "ala ma kota",
+//     bbb: 12+13,
+//     innyObiekt: {
+//         a: 'czesc',
+//         b: 'uszanowanko',
+//     },
+//     dajMiA: function () {
+//         console.log(this);
+//     }
+// }
 
-function fajnaFunkcja() {
-    console.log(this);
-}
-fajnaFunkcja();
+// function fajnaFunkcja() {
+//     console.log(this);
+// }
+// fajnaFunkcja();
 
 
-mojObiekt.dajMiA();
+// mojObiekt.dajMiA();
 // console.log(mojObiekt.bbb);
 // console.log(mojObiekt.tablica);
 // console.log(mojObiekt.innyObiekt.b);
 
+
+
+var a = {
+    pole:12,
+}
+
+b = a;
+console.log(a.pole, b.pole);
+b.pole= "janek";
+console.log(a.pole, b.pole);    
