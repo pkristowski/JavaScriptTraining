@@ -60,11 +60,77 @@
 
 
 
-var a = {
-    pole:12,
+// var a = {
+//     pole:12,
+// }
+
+// b = a;
+// console.log(a.pole, b.pole);
+// b.pole= "janek";
+// console.log(a.pole, b.pole);    
+
+
+
+var Human = {
+
+    imie: "Edek",
+    nazwisko: "Kredek",
+    dataUrodzenia: "01.01.1984",
+    płeć: "Boy",
+    pesel: "13374202465",
+    adres: {
+        ulica: "Obi-Wana Kenobiego",
+        numer: "17",
+        miasto: "Kalisz",
+    },
+    introduce: function(a, b){
+        Human.imie = a;
+        Human.nazwisko= b;
+    },
+    whereIFrom: function(){
+        console.log("Jestem z miasta " + Human.adres.miasto + " ulica " + Human.adres.ulica + " numer " + Human.adres.numer);
+    },
+};
+
+console.log(Human);
+console.log(Human.adres);
+Human.introduce("Chuck", "Norris");
+console.log(Human);
+Human.whereIFrom();
+
+
+function HumanV2(name, surname, ulica){
+    this.name = name;
+    this.surname = surname;
+    this.introduce = function(){
+        console.log(this.name, this.surname, this.ulica);
+    },
+    this.ulica = ulica
+    this.count = function(){
+        console.log(this);
+    }
 }
 
-b = a;
-console.log(a.pole, b.pole);
-b.pole= "janek";
-console.log(a.pole, b.pole);    
+//Undefined
+//console.log(me.ulica);
+
+//Nie działa bez prototype
+HumanV2.printAddress = function(){
+    console.log(this.ulica);
+}
+
+//Prototype dodaje do aktualnie istniejacych obiektów
+HumanV2.prototype.printAddress = function(){
+    console.log(this.ulica);
+}
+
+var me = new HumanV2("Marek", "Barek", "Łokietka");
+me.introduce();
+me.printAddress();
+var you = new HumanV2("Elon", "Musk");
+you.introduce();
+
+
+
+//Zadanie przerób Human na prototype
+// PRzygotuj inny obiektz wykorzystaniem prototype, 5 pól, 5 metod
