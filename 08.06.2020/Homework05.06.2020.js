@@ -37,26 +37,22 @@ console.log("--------------------");
 function sumowanie(){
     let s = 0
 
-    return function(...a){
+    const subsum = function(...a){
 
         for (let index = 0; index < a.length; index++) {
             s = s + a[index]; 
         }
         console.log(s);
-        return s;
+        return subsum;
     }
+
+    return subsum;
 }
 
 //Każde wywołanie zwiększa wartość 's' o podane argumenty
 let superSum = sumowanie();
 
-superSum(6, 4);
-
-superSum(2, 1);
-
-superSum(7, 3, 6, 1);
-
-superSum(4);
+superSum(2, 1)(1, 5, 8);
 
 console.log("-------------------");
 
