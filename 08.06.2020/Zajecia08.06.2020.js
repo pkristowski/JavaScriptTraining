@@ -1,36 +1,60 @@
-//tabliczka mnozenia
+// //tabliczka mnozenia
 
-function mnozenie(a,b){
+// function mnozenie(a,b){
 
-    let tabliczkaX = new Array(a);
-    let tabliczkaY = new Array(b);
+//     var tabliczka = [];
+//     for (var i =1; i <= a; i++){
 
-    for (let index = 0; index < tabliczkaX.length; index++) {
-        tabliczkaX[index] = tabliczkaY;
+//         var wiersz = [];
+//         for (var j =1; j <=b; j++){
+
+//             wiersz.push(i * j);
+
+//         }
+
+//         tabliczka.push(wiersz);
+
+//     }
+
+//     return tabliczka;
+
+// }
+
+// var tab = mnozenie(3,3);
+// console.log(tab);
+// console.table(tab);
+
+
+
+//
+//Homework 08.06.2020 
+//Dziennik uczniów ale obiektami i liczący średnią
+//
+
+
+//this - wskazuje na aktualny kontekts. Funckję która go uruchomiła
+
+const zeZmiennej = "milicja ma pałę";
+const mojObiekt = {
+    aaa: "ala ma kota",
+    bbb: 12+13,
+    innyObiekt: {
+        a: 'czesc',
+        b: 'uszanowanko',
+    },
+    dajMiA: function () {
+        console.log(this);
     }
-    console.log(tabliczkaX);
-
-    for (let x = 0; x < tabliczkaX.length; x++) {
-        for (let y = 0; y < tabliczkaY.length; y++) {
-            
-            tabliczkaX[x][y] = (x + 1) * (y + 1);
-            console.log(x, y);
-            console.log((x + 1) * (y + 1));
-        }
-        
-    }
-
-    for (let x = 0; x < tabliczkaX.length; x++) {
-        for (let y = 0; y < tabliczkaY.length; y++) {
-            
-            console.log(tabliczkaX[x][y], x, y);
-            
-        }
-        
-    }
-
-    return;
 }
 
+function fajnaFunkcja() {
+    console.log(this);
+}
+fajnaFunkcja();
 
-mnozenie(3,3);
+
+mojObiekt.dajMiA();
+// console.log(mojObiekt.bbb);
+// console.log(mojObiekt.tablica);
+// console.log(mojObiekt.innyObiekt.b);
+
