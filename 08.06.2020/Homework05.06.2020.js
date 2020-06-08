@@ -2,42 +2,44 @@
 
 
 //1. Funkcja ktora przy kazdym wywołaniu pokazuje kolejna wartosc silnii
-var start = 0;
-var c = 1;
-function silnia(){
-    
-    c = c * (start + 1);
-    start++;
 
-    function kolejnaSilnia(){
+function silnia(){
+    let start = 0;
+    let c = 1;
+
+    let funkcjaOdSilni = function (){
+        
+        start = start + 1;
+        c = c * start;
+        
+        console.log(c);
         return c;
     }
 
-    return kolejnaSilnia;
-
+    console.log(funkcjaOdSilni());
+    return funkcjaOdSilni();
 }
 
-var silnia1 = silnia();
+let generuj = silnia();
+console.log(typeof generuj);
 
-var silnia2 = silnia();
+silnia();
+silnia();
+silnia();
 
-var silnia3 = silnia();
-
-//var silnia4 = silnia();
-
-// var silnia5 = silnia();
-
-console.log("Kolejna wartość silnii: ", silnia1());
+console.log("Kolejna wartość silnii: ", generuj);
 
 
 console.log("--------------------");
 
 //2. Fukcja ktora dodaje kolejno podane argumenty
 
-var s = 0;
 function sumowanie(a) {
-    s = s + a;
-    function dodaj() {
+    let s = 0
+
+    let dodaj = function (){
+        
+        s = s + a;
         return s;
     }
     return dodaj;
