@@ -34,28 +34,29 @@ console.log("--------------------");
 
 //2. Fukcja ktora dodaje kolejno podane argumenty
 
-function sumowanie(a) {
+function sumowanie(){
     let s = 0
 
-    let dodaj = function (){
-        
-        s = s + a;
+    return function(...a){
+
+        for (let index = 0; index < a.length; index++) {
+            s = s + a[index]; 
+        }
+        console.log(s);
         return s;
     }
-    return dodaj;
 }
 
-//Każde wywołanie zwiększa wartość 's' o podany argument
-var test1 = sumowanie(6);
+//Każde wywołanie zwiększa wartość 's' o podane argumenty
+let superSum = sumowanie();
 
-var test2 = sumowanie(2);
+superSum(6, 4);
 
-var test3 = sumowanie(7);
+superSum(2, 1);
 
-var test4 = sumowanie(0);
+superSum(7, 3, 6, 1);
 
-console.log("Sumowanie: ", test1());
-
+superSum(4);
 
 console.log("-------------------");
 
