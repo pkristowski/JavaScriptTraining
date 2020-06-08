@@ -7,7 +7,6 @@
 var start = 0;
 var c = 1;
 function silnia(){
-
     
     c = c * (start + 1);
     start++;
