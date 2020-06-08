@@ -1,8 +1,6 @@
 //Zadanie domowe:
 
 
-
-
 //1. Funkcja ktora przy kazdym wywołaniu pokazuje kolejna wartosc silnii
 var start = 0;
 var c = 1;
