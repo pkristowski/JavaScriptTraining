@@ -16,13 +16,19 @@
 
 
 
-document.body.innerHTML = `
-<div class="element">
-    <span>test</span>
-<div>
-`;
-console.log(document.querySelector('.element'));
+// document.body.innerHTML = `
+// <div class="element">
+//     <span>test</span>
+// <div>
+// `;
+// console.log(document.querySelector('.element'));
 
-const divElement = document.createElement("div");
+// const divElement = document.createElement("div");
 
+const el = document.querySelector('#user');
 
+el.dataset.dateOfBirth = '1960-10-03';
+
+delete el.dataset.dateOfBirth;
+
+el.dataset.someDataAttr = 'kopytko';
