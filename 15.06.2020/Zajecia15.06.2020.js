@@ -92,6 +92,13 @@ queryAll[queryAll.length - 1].style.backgroundColor = 'green';
 
 
 //Div ktory zmienia kolor po kliknieciu
+const elementKlik = document.querySelector('#kolorowyKlik');
+elementKlik.style.cssText = "height:100px; width:100px; border: 2px solid black; background-color:white" ;
 
+function onClick(event){
+    elementKlik.style.cssText = "height:100px; width:100px; border: 2px solid black; background-color:" + getRandomColor(); 
+}
+
+elementKlik.addEventListener('click', onClick);
 
 //Po wpisaniu tekstu w input pokazac Aler(wartoscZInputa)
