@@ -27,8 +27,20 @@
 
 const el = document.querySelector('#user');
 
+//wszystko po date- w HTML zostaje zmienione na camel case
 el.dataset.dateOfBirth = '1960-10-03';
 
 delete el.dataset.dateOfBirth;
 
 el.dataset.someDataAttr = 'kopytko';
+
+
+el.style.cssText = "color: blue; border: 2px solid black";
+
+el.setAttribute("style", "color:red; border: 1px solid blue;");
+
+el.style.color = "blue"
+
+//console.log(window.getComputedStyle(document.querySelector(".test")));
+
+
