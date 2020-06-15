@@ -296,3 +296,4 @@ var queryAll = document.querySelectorAll('.element');
 
 console.log(querySelector);
 console.log(queryAll);
+
