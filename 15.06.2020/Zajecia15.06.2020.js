@@ -101,13 +101,13 @@ function onClick(event){
 
 elementKlik.addEventListener('click', onClick);
 
-//Po wpisaniu tekstu w input pokazac Aler(wartoscZInputa)
 
-const inputElement = document.querySelector('wpis')
-console.log(inputElement);
+//Po wpisaniu tekstu w input pokazac Aler(wartoscZInputa)
+const inputElement = document.querySelector('#wpis')
+console.log(inputElement.value);
 
 function onBlur(){
-    alert('Wpisano: ', inputElement.value);
+    alert('Wpisano: ' + inputElement.value);
 }
 
 inputElement.addEventListener('blur', onBlur);
