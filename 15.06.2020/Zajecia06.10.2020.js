@@ -289,9 +289,3 @@ class Alert {
 var uwaga = new Alert();
 // uwaga.wyswietlAlert(1, "Cuidado! Llamas!", 5);
 uwaga.anulujAlert;
-
-
-
-
-
-
