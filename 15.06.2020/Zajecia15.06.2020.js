@@ -90,3 +90,8 @@ queryAll[0].style.backgroundColor = 'lightblue';
 queryAll[2].style.backgroundColor = 'darkred';
 queryAll[queryAll.length - 1].style.backgroundColor = 'green';
 
+
+//Div ktory zmienia kolor po kliknieciu
+
+
+//Po wpisaniu tekstu w input pokazac Aler(wartoscZInputa)
