@@ -291,5 +291,8 @@
 // uwaga.anulujAlert;
 
 
-document.querySelector('.element');
-document.querySelectorAll('.element');
+var querySelector = document.querySelector('.element');
+var queryAll = document.querySelectorAll('.element');
+
+console.log(querySelector);
+console.log(queryAll);
