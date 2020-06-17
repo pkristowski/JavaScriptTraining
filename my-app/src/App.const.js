@@ -6,13 +6,16 @@ export const zmienna2 = {
 };
 
 export function testowa(a){
-    alert(a);
+    return 'warotsc a', a;
 }
 
-const zmienna3 = 'zmienna 3 ';
-const zmienna4 = 'zmienna 4 ';
+const zmienna3 = 'zmienna 3';
+const zmienna4 = ['zmienna 4 ', 'innaZmienna '];
 
 export {
     zmienna3,
     zmienna4,
+}
+export default function() {
+    return ' domyslny export';
 }

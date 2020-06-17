@@ -1,22 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {zmienna, zmienna2, zmienna3} from './App.const.js';
+import jakisDomyslny, {testowa, zmienna, zmienna2, zmienna3, zmienna4} from './App.const.js';
 
 
 function App() {
   //const zmienna = "Ala ma kota";
- // testowa('witam');
+  
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          CodeMe! React lessons!
+          CodeMe! React lessons! 
+          {testowa(' witam')}
+          {jakisDomyslny()}
         </p>
 
         <p>
-          {zmienna}, {zmienna3}, {zmienna2.b}
+          {zmienna}, {zmienna3}, {zmienna2.b}, {zmienna4}
         </p>
 
         <a
