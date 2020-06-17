@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import jakisDomyslny, {testowa, zmienna, zmienna2, zmienna3, zmienna4} from './App.const.js';
+import HelloWorld from './components/HelloWorld/HelloWorld.js';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+          {HelloWorld()}
           CodeMe! React lessons! 
           {testowa(' witam')}
           {jakisDomyslny()}
