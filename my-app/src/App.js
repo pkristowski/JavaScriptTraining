@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import jakisDomyslny, {testowa, zmienna, zmienna2, zmienna3, zmienna4} from './App.const.js';
-import HelloWorld from './components/HelloWorld/HelloWorld.js';
+import jakisDomyslny, {testowa, zmienna, zmienna2, zmienna3, zmienna4 } from './App.const.js';
+import HelloWorld from './components';
 
 
 function App() {
