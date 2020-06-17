@@ -13,7 +13,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          {new HelloWorld()}
+          <HelloWorld />
           CodeMe! React lessons! 
           {testowa(' witam')}
           {jakisDomyslny()}
