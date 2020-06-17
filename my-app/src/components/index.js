@@ -4,7 +4,7 @@ import './style.css';
 class HelloWorld extends React.Component {
     constructor(props) {
         super(props);
-    
+
         this.state = {
             zmiany: "Hello World"
         }
@@ -20,7 +20,7 @@ class HelloWorld extends React.Component {
 
         return (
             <div className="fajna-klasa">
-                <h1 onClick={handleClick}>{this.state.zmiany}</h1>
+                <h1 onClick={handleClick.bind(this)}>{this.state.zmiany}</h1>
             </div>
         )
     }
