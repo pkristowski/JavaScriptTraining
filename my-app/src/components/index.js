@@ -10,17 +10,18 @@ class HelloWorld extends React.Component {
         }
     }
 
+    handleClick() {
+        alert("Klikłem");
+        this.setState({
+            zmiany: "Elo elo 3 2 0"
+        })
+    }
+
     render() {
-        function handleClick() {
-            alert("Klikłem");
-            this.setState({
-                zmiany: "Elo elo 3 2 0"
-            })
-        }
 
         return (
             <div className="fajna-klasa">
-                <h1 onClick={handleClick.bind(this)}>{this.state.zmiany}</h1>
+                <h1 onClick={this.handleClick.bind(this)}>{this.state.zmiany}</h1>
             </div>
         )
     }
