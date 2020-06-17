@@ -2,18 +2,25 @@ import React from 'react';
 import './style.css';
 
 class HelloWorld extends React.Component {
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+            zmiany: "Hello World"
+        }
+    }
 
     render() {
-        let zmiany = "Hello World";
         function handleClick() {
             alert("Klikłem");
-            zmiany = "Elo elo 3 2 0";
-            console.log(zmiany);
+            this.setState({
+                zmiany: "Elo elo 3 2 0"
+            })
         }
 
         return (
             <div className="fajna-klasa">
-                <h1 onClick={handleClick}>{zmiany}!</h1>
+                <h1 onClick={handleClick}>{this.state.zmiany}</h1>
             </div>
         )
     }
