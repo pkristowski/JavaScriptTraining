@@ -10,14 +10,12 @@ class Clock extends React.Component {
     }
 
     handleClick() {
-        alert("Klik");
         this.setState({
             date: new Date()
         })
     }
 
     render() {
-
         return (
             <div>
                 <h1>Hello, world!</h1>
