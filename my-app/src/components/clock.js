@@ -7,7 +7,9 @@ class Clock extends React.Component {
         this.state = {
             date: new Date()
         }
+        setInterval(this.handleClick.bind(this), 1000);
     }
+
 
     handleClick() {
         this.setState({
@@ -19,7 +21,7 @@ class Clock extends React.Component {
         return (
             <div>
                 <h1>Hello, world!</h1>
-                <h2 onClick={this.handleClick.bind(this)}>Is it {this.state.date.toLocaleTimeString()}</h2>
+                <h2>Is it {this.state.date.toLocaleTimeString()}</h2>
             </div>
         )
     }
