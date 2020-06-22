@@ -47,9 +47,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <HelloWorld />
-        </header>
-
 
         <Message title="tytul komponentu">
           <p>Ala ma kota lorem impsum</p>
@@ -57,7 +54,7 @@ function App() {
           <p>Ala ma kota lorem impsum</p>
           <p>Ala ma kota lorem impsum</p>
         </Message>
-        
+        </header>
     </div>
   );
 }
