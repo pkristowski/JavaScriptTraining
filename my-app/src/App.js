@@ -6,19 +6,48 @@ import jakisDomyslny, { testowa, zmienna, zmienna2, zmienna3, zmienna4 } from '.
 import Clock from './components/clock';
 
 
+// function App() {
+//   //const zmienna = "Ala ma kota";
+
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <p>
+//           <Clock />
+//           CodeMe! React lessons!
+//           {testowa(' witam')}
+//           {jakisDomyslny()}
+//         </p>
+
+//         <p>
+//           {zmienna}, {zmienna3}, {zmienna2.b}, {zmienna4}
+          
+//         </p>
+
+//         <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Learn React
+//         </a>
+//       </header>
+//     </div>
+//   );
+// }
+
+
 function App() {
-  //const zmienna = "Ala ma kota";
+  const zmiennaZTytulem = "Ala ma kota";
+  const tytulZFunkcji = () => 'zwraca jakis tytlu z funkcji';
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <Clock />
-          CodeMe! React lessons!
-          {testowa(' witam')}
-          {jakisDomyslny()}
-        </p>
+        <HelloWorld />
+        </header>
 
         <p>
           {zmienna}, {zmienna3}, {zmienna2.b}, {zmienna4}
