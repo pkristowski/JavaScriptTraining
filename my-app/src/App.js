@@ -7,6 +7,7 @@ import Clock from './components/clock';
 import Message from './components';
 import Click from './components';
 import Image from './components/image';
+import TwoColumns from './components/twoColumns';
 
 // function App() {
 //   //const zmienna = "Ala ma kota";
@@ -48,18 +49,20 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
+      
+        <TwoColumns>
         <Click defaultValue ={3}/>
         <Click defaultValue ={7}/>
+        </TwoColumns>
         <Click defaultValue ={12}/>
-
+        
         <Message title="tytul komponentu">
           <p>Ala ma kota lorem impsum</p>
 
         </Message>
 
         <Image src ="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.sketchappsources.com%2Fresources%2Fsource-image%2Fnyan-cat-artoctober.png&f=1&nofb=1" />
-
+        
       </header>
 
     </div>
