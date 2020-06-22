@@ -60,7 +60,7 @@ import React from 'react';
 export default class Click extends React.Component {
     constructor(props) {
         super(props);
-        this.starte = {
+        this.state = {
             clicks: 0,
         }
     }
@@ -84,4 +84,3 @@ export default class Click extends React.Component {
         )
     }
 }
-

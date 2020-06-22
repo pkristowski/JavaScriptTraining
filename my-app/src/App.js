@@ -49,13 +49,17 @@ function App() {
     <div className="App">
       <header className="App-header">
 
+          <Click />
+          <Click />
+          <Click />
+          <Click />
+
         <Message title="tytul komponentu">
           <p>Ala ma kota lorem impsum</p>
 
-          <Click />
-
         </Message>
       </header>
+
     </div>
   );
 }
