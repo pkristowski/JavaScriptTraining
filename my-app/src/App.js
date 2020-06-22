@@ -5,6 +5,7 @@ import jakisDomyslny, { testowa, zmienna, zmienna2, zmienna3, zmienna4 } from '.
 import HelloWorld from './components';
 import Clock from './components/clock';
 import Message from './components';
+import Click from './components';
 
 
 // function App() {
@@ -50,9 +51,9 @@ function App() {
 
         <Message title="tytul komponentu">
           <p>Ala ma kota lorem impsum</p>
-          <p>Ala ma kota lorem impsum</p>
-          <p>Ala ma kota lorem impsum</p>
-          <p>Ala ma kota lorem impsum</p>
+
+          <Click />
+
         </Message>
       </header>
     </div>

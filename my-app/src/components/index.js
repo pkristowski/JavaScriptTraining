@@ -29,13 +29,57 @@ import React from 'react';
 // export default HelloWorld;
 
 
-export default class Message extends React.Component {
+// export default class Message extends React.Component {
+
+//     constructor(props) {
+//                 super(props);
+
+//                 this.state = {
+//                     zmiany: "Hello World",
+//                     licznik: 0
+//                 }
+//             }
+
+//             handleClick() {
+//                 this.state.licznik++;
+//                 console.log("Kliknięcie: " + this.state.licznik);
+//             }
+
+//     render() {
+//         const { title, licznik } = this.props;
+//         return (
+//             <div>
+//                 <h2>{title}</h2>
+//                 <p>{licznik}</p>
+//             </div>
+//         )
+//     }
+// }
+
+
+export default class Click extends React.Component {
+    constructor(props) {
+        super(props);
+        this.starte = {
+            clicks: 0,
+        }
+    }
+
+
+    handleClick() {
+        this.setState({
+            clicks: this.state.clicks + 1,
+        })
+    }
+
     render() {
-        const { title, children } = this.props;
+        const { clicks } = this.state;
         return (
             <div>
-                <h2>{title}</h2>
-                <p>{children}</p>
+                <div>
+                    <strong>{clicks}</strong>
+                </div>
+                <input onClick={this.handleClick.bind(this)} type="button" value="Kliknij" />
             </div>
         )
     }
