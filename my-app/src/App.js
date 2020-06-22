@@ -2,8 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import jakisDomyslny, { testowa, zmienna, zmienna2, zmienna3, zmienna4 } from './App.const.js';
-//import HelloWorld from './components';
+import HelloWorld from './components';
 import Clock from './components/clock';
+import Message from './components';
 
 
 // function App() {
@@ -49,20 +50,14 @@ function App() {
         <HelloWorld />
         </header>
 
-        <p>
-          {zmienna}, {zmienna3}, {zmienna2.b}, {zmienna4}
-          
-        </p>
 
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Message title="tytul komponentu">
+          <p>Ala ma kota lorem impsum</p>
+          <p>Ala ma kota lorem impsum</p>
+          <p>Ala ma kota lorem impsum</p>
+          <p>Ala ma kota lorem impsum</p>
+        </Message>
+        
     </div>
   );
 }

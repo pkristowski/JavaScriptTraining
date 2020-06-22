@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import App from '../App';
 
 // class HelloWorld extends React.Component {
 //     constructor(props) {
@@ -30,11 +31,15 @@ import './style.css';
 // export default HelloWorld;
 
 
-export default class Message extends React.Component [
+export default class Message extends React.Component {
     render() {
-
-        const { title, text, titleFunction } = this.prompt
-        
-
+        const {title, children} = this.props;
+        return (
+            <div>
+                <h2>{title}</h2>
+                <p>{children}</p>
+            </div>
+        )
     }
-]
+}
+
