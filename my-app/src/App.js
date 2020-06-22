@@ -23,7 +23,7 @@ import Message from './components';
 
 //         <p>
 //           {zmienna}, {zmienna3}, {zmienna2.b}, {zmienna4}
-          
+
 //         </p>
 
 //         <a
@@ -54,7 +54,7 @@ function App() {
           <p>Ala ma kota lorem impsum</p>
           <p>Ala ma kota lorem impsum</p>
         </Message>
-        </header>
+      </header>
     </div>
   );
 }
