@@ -61,7 +61,7 @@ export default class Click extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            clicks: 0,
+            clicks: props.defaultValue,
         }
     }
 
@@ -84,3 +84,5 @@ export default class Click extends React.Component {
         )
     }
 }
+
+
