@@ -7,11 +7,11 @@ export default function () {
         () => {
             setInterval(() => {
                 const date = new Date();
-                setDateString(date.toLocaleDateString())
+                setDateString(date.toLocaleTimeString())
             }, 1000);
         }
     )
-    
+
     return (
         <div>
             {dateString};
