@@ -13,7 +13,7 @@ export default function () {
     )
 
     return (
-        <div>
+        <div style={{border: "1px solid red"}}>
             {dateString};
         </div>
     );
