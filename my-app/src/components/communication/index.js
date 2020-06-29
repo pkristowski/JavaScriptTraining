@@ -17,7 +17,7 @@ export default class InputTest extends Component {
     render() {
         return (
             <div>
-                <input type="text" onChange={this.handelOnChange} />
+                <input type="text" onChange={this.handleOnChange} />
                 <img src={`https://unsplash.it/150/150?image=${this.state.input}`} />
             </div>
         )
