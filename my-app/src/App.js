@@ -12,6 +12,7 @@ import Hooks from './components/hookss';
 import ClockHook from './components/clockHook';
 import Text from './components/Text';
 import Title from './components/Title';
+import InputTest from './components/communication';
 
 // function App() {
 //   //const zmienna = "Ala ma kota";
@@ -85,6 +86,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         
+    <InputTest />
+
         <Title />
         
         <TwoColumns >
