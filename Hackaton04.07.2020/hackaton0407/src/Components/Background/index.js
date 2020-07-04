@@ -4,14 +4,14 @@ export default function () {
     const [number, changeNumber] = useState('');
 
     //Get random number between 1 nad 999
-    useEffect(
-        () => {
-            setInterval(() => {
-                const number = Math.floor((Math.random() * 999) + 1);
-                changeNumber(number)
-            }, 5000);
-        }
-    )
+    // useEffect(
+    //     () => {
+    //         setInterval(() => {
+    //             const number = Math.floor((Math.random() * 999) + 1);
+    //             changeNumber(number)
+    //         }, 30000);
+    //     }
+    // )
 
     return (
         //Show random image from picsum.photos. Size 1000 by 1200

@@ -3,6 +3,7 @@ import './App.css';
 import Background from './Components/Background';
 import FourColumns from './Components/FourColumns';
 import InfiniteScroll from './Components/InfiniteScroll';
+import RandomImage from './Components/RandomImage';
 
 function App() {
   return (
@@ -10,11 +11,14 @@ function App() {
       <header className="App-header">
         <Background />
         <FourColumns>
-          <InfiniteScroll />
-          <InfiniteScroll />
-          <InfiniteScroll />
-          <InfiniteScroll />
+          <InfiniteScroll  items={[1, 2, 3]}/>
+          <InfiniteScroll  items={[1, 2, 3]}/>
+          <InfiniteScroll  items={[1, 2, 3]}/>
+          <InfiniteScroll  items={[1, 2, 3]}/>
         </FourColumns>
+
+        <RandomImage/>
+        
       </header>
     </div>
   );

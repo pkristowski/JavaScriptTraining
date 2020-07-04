@@ -3,7 +3,9 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import './style.css';
 
 
-export default function Scroll() {
+export default function Scroll({ items }) {
+
+    console.log("items: ", {items});
 
     const style = {
         height: 30,
@@ -11,23 +13,6 @@ export default function Scroll() {
         margin: 6,
         padding: 8
     };
-
-    var items = [];
-
-    var url = "https://gnews.io/api/v3/top-news?token=149adc463181f6a4d4a76e94b1bb3719";
-
-    fetch('https://api.imgflip.com/get_memes')
-        .then(response => response.json())
-        .then(data => {
-            let lengthOfData = data.length;
-            console.log(data.data.memes);
-            for (var x = 0; x < lengthOfData; x++) {
-                console.log(data.data);
-                items[x] = data.articles[x].title;
-            }
-
-        });
-
     return (
         <InfiniteScroll
             dataLength={items.length}
