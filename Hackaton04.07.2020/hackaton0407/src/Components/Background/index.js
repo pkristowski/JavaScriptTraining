@@ -9,7 +9,7 @@ export default function () {
             setInterval(() => {
                 const number = Math.floor((Math.random() * 999) + 1);
                 changeNumber(number)
-            }, 15000);
+            }, 5000);
         }
     )
 
