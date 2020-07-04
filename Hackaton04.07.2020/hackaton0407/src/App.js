@@ -16,7 +16,7 @@ function App() {
           <InfiniteScroll  items={[1, 2, 3]}/>
           <InfiniteScroll  items={[1, 2, 3]}/>
         </FourColumns>
-      <RandomImage />
+      <RandomImage pictureNumber={152}/>
       </header>
     </div>
   );
