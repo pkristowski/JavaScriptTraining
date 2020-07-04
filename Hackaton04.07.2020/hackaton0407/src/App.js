@@ -1,43 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import { Container } from 'react-bootstrap';
-import ProductList from './getData';
+import Background from './Components/Background';
+import FourColumns from './Components/FourColumns';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Container>
-          <h1 style={{textAlign:'center'}}>React Tutorial</h1>
-          <ProductList />
-        </Container>
-      </div>
-    );
-  }
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Background />
+        <FourColumns>
+          <div>Test 1</div>
+          <div>Test 2</div>
+          <div>Test 3</div>
+          <div>Test 4</div>
+        </FourColumns>
+      </header>
+    </div>
+  );
 }
 
 export default App;
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
