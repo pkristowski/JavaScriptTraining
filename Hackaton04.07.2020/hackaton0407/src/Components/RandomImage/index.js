@@ -1,6 +1,7 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useState, useEffect } from 'react';
 import ShowVideo from '../ShowVideo';
 import ShowStocks from '../ShowStocks';
+import './style.css';
 
 export default function RandomImage() {
     const [actionNumber, changeNumber] = useState('');
@@ -32,7 +33,18 @@ export default function RandomImage() {
         content.push(<img src={url}></img>)
     }
     else {
-        content.push(<ShowStocks />);
+        switch (actionNumber){
+            case 1:
+                content.push(<ShowStocks />);
+                break;
+            // case 2:
+            //     content.push(<ShowVideo />);
+            //     break;
+            // default:
+            //     content.push("witam");
+
+        }
+
     }
     console.log("tutaj: ", content);
 

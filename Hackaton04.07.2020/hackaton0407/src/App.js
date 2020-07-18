@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Background from './Components/Background';
 import FourColumns from './Components/FourColumns';
-import InfiniteScroll from './Components/InfiniteScroll';
 import RandomImage from './Components/RandomImage';
 import ColumnItem from './Components/ColumnItem';
 
