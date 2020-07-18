@@ -9,8 +9,8 @@ import ColumnItem from './Components/ColumnItem';
 function App() {
 
   function LoadArrayWithData(){
-
-  let array = [["a", "b", "c", "d", "e"], [1, 2, 3, 4, 5,6,7,8,9,10], ["ala", "ma", "kota"], [123, 456, 789]];
+  let randomNumber = Math.floor((Math.random() * 12) + 1);
+  let array = [[ <RandomImage/>, <RandomImage/>,<RandomImage/>], [ <RandomImage/>, <RandomImage/>,<RandomImage/>], [ <RandomImage/>, <RandomImage/>,<RandomImage/>], [ <RandomImage/>, <RandomImage/>,<RandomImage/>]];
 
   return array;
   }

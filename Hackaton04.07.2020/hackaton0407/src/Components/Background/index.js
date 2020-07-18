@@ -15,6 +15,6 @@ export default function () {
 
     return (
         //Show random image from picsum.photos. Size 1000 by 1200
-        <img style={{ height: "100%", width: "100%", position: "fixed", top: "0%", left: "0%", marginTop: "0px", marginLeft: "0px", opacity: 0.25 }} src={`https://picsum.photos/id/${number}/1500/1300`} />
+        <img style={{ height: "100%", width: "100%", position: "fixed", top: "0%", left: "0%", marginTop: "0px", marginLeft: "0px", opacity: 0.05 }} src={`https://picsum.photos/id/${number}/1500/1300`} />
     )
 }
