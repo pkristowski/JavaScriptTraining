@@ -5,10 +5,19 @@
 }
 
 .four-column-grid > div{
-    flex: 1 1 50%;
+    flex: 50%;
 }
 .column{
     border-style: solid;
     border-color: black;
-    margin: 1px;
-}
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 24.688%;
+} 
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

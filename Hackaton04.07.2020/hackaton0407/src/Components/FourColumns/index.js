@@ -3,6 +3,7 @@ import './style.css';
 
 export default function FourColumns(props){
     return (
+        <div className="four-column-grid">
         <div className="row">
             <div className="column" id="column1" style={{float: "left"}}>
                 {props.children[0]}
@@ -16,6 +17,7 @@ export default function FourColumns(props){
             <div className="column" id="column4" style={{float: "right"}}>
                 {props.children[3]}
             </div>
+        </div>
         </div>
     )
 };

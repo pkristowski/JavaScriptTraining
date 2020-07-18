@@ -1,0 +1,11 @@
+.single-column-grid{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+.single-column-grid > .column{
+    width: 100%;
+    margin: 0px;
+    height: auto;
+}
