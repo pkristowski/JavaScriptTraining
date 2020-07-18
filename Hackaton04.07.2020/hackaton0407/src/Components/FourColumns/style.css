@@ -1,10 +1,10 @@
-.two-column-grid{
+.four-column-grid{
     display:flex;
     flex-direction: row;
     width: 100%;
 }
 
-.two-column-grid > div{
+.four-column-grid > div{
     flex: 1 1 50%;
 }
 .column{

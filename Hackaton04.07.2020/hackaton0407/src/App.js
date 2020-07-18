@@ -11,12 +11,12 @@ function App() {
       <header className="App-header">
         <Background />
         <FourColumns>
-          <InfiniteScroll  items={[1, 2, 3]}/>
+          <InfiniteScroll  items={[100000000000000000, 2, 3]}/>
           <InfiniteScroll  items={[1, 2, 3]}/>
           <InfiniteScroll  items={[1, 2, 3]}/>
           <InfiniteScroll  items={[1, 2, 3]}/>
         </FourColumns>
-      <RandomImage pictureNumber={152}/>
+      {/* <RandomImage pictureNumber={155}/> */}
       </header>
     </div>
   );
