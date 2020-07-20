@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css';
-import TradingViewWidget, { Themes } from '../../../node_modules/react-tradingview-widget';
+import TradingViewWidget, { Themes } from 'react-tradingview-widget';
 
 export default function ShowStock() {
     return (

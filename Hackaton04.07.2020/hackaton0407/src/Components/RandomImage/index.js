@@ -17,9 +17,10 @@ export default function RandomImage() {
         var url = `https://source.unsplash.com/collection/${collectionID}/${imageWidth}x${imageHeight}/?sig=${pictureNumber}`
         return url;
     }
-    var interval = Math.floor((Math.random() * 10) + 1) * 8000
+    
     useEffect(
         () => {
+            var interval = Math.floor((Math.random() * 10) + 1) * 1000
             setInterval(() => {
                 const actionNumber = Math.floor((Math.random() * 6) + 1);
                 changeNumber(actionNumber)
