@@ -1,0 +1,7 @@
+.stocks{
+    height: 210px;
+    width: 220px;
+    padding-left: 5px;
+    padding-top: 5px;
+    overflow: hidden;
+}

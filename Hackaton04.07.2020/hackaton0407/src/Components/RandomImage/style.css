@@ -1,4 +1,6 @@
 .content{
-    width: 25%;
-    height: 25%;
+    width: 220px;
+    height: 220px;
+    padding-left: 25px;
+    padding-top: 8px;
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ShowVideo from '../ShowVideo';
+import ShowNews from '../ShowNews';
 import ShowStocks from '../ShowStocks';
 import './style.css';
 
@@ -16,7 +17,7 @@ export default function RandomImage() {
         var url = `https://source.unsplash.com/collection/${collectionID}/${imageWidth}x${imageHeight}/?sig=${pictureNumber}`
         return url;
     }
-    var interval = Math.floor((Math.random() * 20) + 1) * 1000
+    var interval = Math.floor((Math.random() * 10) + 1) * 8000
     useEffect(
         () => {
             setInterval(() => {
@@ -27,26 +28,30 @@ export default function RandomImage() {
     );
 
     var content = [];
-    console.log("action number: ", actionNumber);
+    // console.log("action number: ", actionNumber);
     if (actionNumber === 6) {
         let url = renderGalleryItem();
-        content.push(<img src={url}></img>)
+        content.push(<img src={url}></img>);
     }
     else {
-        switch (actionNumber){
+        switch (actionNumber) {
             case 1:
                 content.push(<ShowStocks />);
                 break;
-            // case 2:
-            //     content.push(<ShowVideo />);
+            case 2:
+                content.push(<ShowVideo />);
+                break;
+            // case 3:
+            //     content.push(<ShowNews />)
             //     break;
-            // default:
-            //     content.push("witam");
+            default:
+                let url = renderGalleryItem();
+                content.push(<img src={url}></img>);
 
         }
 
     }
-    console.log("tutaj: ", content);
+    // console.log("tutaj: ", content);
 
     return (
         <div className="content">
